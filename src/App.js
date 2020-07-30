@@ -36,8 +36,8 @@ function App() {
           .then((response) => response.json())
           .then((data) => {
             const countries = data.map((country) => ({
-              name: country.country, // United States, United Kingdom, etc.
-              value: country.countryInfo.iso2 // USA, UK, etc
+              name: country.country, // India, United Kingdom, etc.
+              value: country.countryInfo.iso2 // IND, UK, etc
             }));
             const sortedData = sortData(data);
             setTableData(sortedData);
